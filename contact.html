@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KOTHARU VENTURES </title>
+
+    <!-- Favicon -->
+ <link href="img/myPics/SECONDARY LOGO - KOTHARU-08.png" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://kit.fontawesome.com/942547a0cd.js" crossorigin="anonymous"></script>
+
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Default for small devices (0px to 991px) */
+.offcanvas {
+    width: 150px; /* Default initial width */
+}
+
+.nav-link {
+    font-size: 12px; /* Default font size for nav links */
+}
+
+.offcanvas-title {
+    font-size: 16px; /* Default font size for the offcanvas title */
+}
+
+/* For devices between 0px and 991px (mobile & tablet sizes) */
+@media (max-width: 991px) {
+    .offcanvas {
+        width: 500px !important; /* Set the width to 600px for small devices */
+    }
+
+    .nav-link {
+        font-size: 3rem !important; /* Set font size for nav links up to 991px */
+    }
+
+    .offcanvas-title {
+        font-size: 3.5rem !important; /* Set larger font size for the offcanvas title */
+    }
+}
+
+/* For devices larger than 991px */
+@media (min-width: 992px) {
+    .offcanvas {
+        width: 300px; /* Set the width for larger devices */
+    }
+
+    .nav-link {
+        font-size: 16px; /* Set font size for nav links for larger devices */
+    }
+
+    .offcanvas-title {
+        font-size: 20px; /* Set larger font size for the offcanvas title on bigger screens */
+    }
+}
+        .nav-link {
+            color: grey;
+            font-size: 18px;
+            text-align: left;
+            padding: 0%;
+        }
+
+/* Default Style */
+.fa-bars {
+    font-size: 39px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate on hover */
+/* .fa-bars:active {
+    transform: rotate(90deg);
+    border: none; /* Adjust the degree of rotation as needed 
+} */
+
+/* Rotate on active (click) */
+/* .fa-bars:hover {
+    transform: rotate(180deg);
+    border: none; /* Adjust the degree of rotation for active state 
+} */
+
+/* Media query for screens smaller than 992px */
+@media (max-width: 991px) {
+    .fa-bars {
+        font-size: 100px !important; /* Set the font size to 100px */
+    }
+}
+/* Default Style for the Brand Image */
+/* Default Style for the Brand Image */
+.navbar-brand img {
+    width: 15%; /* Default width for large screens */
+    float: right;
+    margin-top: 0; /* Ensure no top margin by default */
+}
+
+/* Media Query for screens smaller than 992px */
+@media (max-width: 991px) {
+   
+    .navbar-brand img {
+        width: 40% !important; /* Increase width to 30% for smaller screens */
+        /* Move the image 2% down from the top */
+    }
+}
+
+
+
+.portfolio{
+    padding:0px;
+}
+        .portfolio-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(110%);
+        }
+
+        .portfolio-item {
+            width: 100%;
+            /* Make each item full width */
+            margin-bottom: 20px;
+            /* Add some space between each item */
+        }
+
+        .portfolio-img img {
+            width: 50%;
+            /* Ensure the images take up full width of the item */
+            object-fit: cover;
+            aspect-ratio: 6/ 4;
+            /* Adjust aspect ratio as needed */
+        }
+
+        .portfolio-text {
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 12px !important;
+        }
+
+        .hiddenss {
+            display: none;
+        }
+
+        .extra-contents a {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        @media screen and (max-width:991px) {
+
+
+li{
+    font-size: 2.5rem !important;
+}
+
+
+
+
+}
+    </style>
+</head>
+
+<body>
+      
+    <!-- preloader end -->
+    <div class="wrapper content" id="content" style="">
+      
+
+        <!-- Nav Bar Start -->
+        <div class="container-fluid" style="background-color: #fff;">
+            <nav class="navbar">
+                <div class="container-fluid" style="background-color: #fff;">
+                    <!-- Hamburger Menu Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+
+                        <i class="fa-solid fa-bars"></i>
+
+
+                    </button>
+                    <!-- <a class="" href="#"><img src="img/myPics/WhatsApp Image 2024-09-25 at 20.36.46_4a6e4b1e.jpg" class="logs" style="float: right;width:6%;position:absolute;z-index:40;margin-left: -6%;"/></a> -->
+                     <a class="navbar-brand" href="#"><img src="img/myPics/PRIMARY LOGO- KOTHARU X MC-03.png"  style="float: right;"/></a>
+                </div>
+            </nav>
+
+            <!-- Offcanvas Sidebar -->
+            <div class="offcanvas offcanvas-start text-#364967" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel" style="background-color: #fff; width: 150px;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color:#fff">KOTHARU</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">TEAM</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="service.html">CAREERS</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="news.html">NEWS</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- Nav Bar End -->
+
+
+       
+
+
+        <!-- Portfolio Start -->
+      
+        <div class="contact wow fadeInUp" style="margin-top: -5%;">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Get In Touch</p>
+                    <h2>FOR ANY QUERY</h2>
+                </div>
+                <div class="container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 mb-4"> <!-- Use col-sm-12 to ensure full width on small devices -->
+                                <div class="contact-info">
+                                    <div class="contact-item mb-4">
+                                        <i class="flaticon-address"></i>
+                                        <div class="contact-text">
+                                            <h2>Location</h2>
+                                            <p>Hyderabad- Flat No Bo-10, Indu Fortune Fields, Annexe, Kphb colony, Kukatpally,
+                                                Hyderabad, Telangana-500085.</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item mb-4">
+                                        <i class="flaticon-call"></i>
+                                        <div class="contact-text">
+                                            <h2>Phone</h2>
+                                            <p><a href="tel:+914071385954" style="text-decoration: none; color: white;">+91 4071385954</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item mb-4">
+                                        <i class="flaticon-send-mail"></i>
+                                        <div class="contact-text">
+                                            <h2>Email</h2>
+                                            <p><a href="mailto:info@kvpl.org" style="text-decoration: none; color: white;">info@kvpl.org</a></p>
+                                        </div>
+                                    </div>                                 
+                                    
+                                </div>
+                            </div>
+                    
+                            <div class="col-12 col-sm-12 col-md-6"> <!-- Again, use col-sm-12 for full width on smaller devices -->
+                                <div class="contact-form">
+                                    <div id="success"></div>
+                                    <form name="sentMessage" id="contactForm">
+                                        <div class="control-group mb-3">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="control-group mb-3">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="control-group mb-3">
+                                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required />
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="control-group mb-3">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Message" required></textarea>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-primary btn-block" type="submit" id="sendMessageButton">Send Message</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        document.getElementById('contactForm').addEventListener('submit', function(event) {
+                            event.preventDefault(); // Prevent the form from submitting in the traditional way
+                    
+                            var formData = new FormData(this);
+                    
+                            fetch('https://script.google.com/macros/s/AKfycbxZUa7DOXjIVY5qJPjXCzKu7s3YmiLZjHzeJMnzWEUwHzKNhctFRg7HmP02m7quB_S3/exec', {
+                                method: 'POST',
+                                body: formData,
+                            })
+                            .then(response => {
+                                if (!response.ok) { // Check if response is OK
+                                    throw new Error('Network response was not ok ' + response.statusText);
+                                }
+                                return response.text();
+                            })
+                            .then(data => {
+                                console.log('Response Data:', data); // Log the response data
+                                document.getElementById('success').innerText = data; // Display success message
+                            })
+                            .catch(error => {
+                                console.error('Error:', error);
+                                document.getElementById('success').innerText = 'There was an error submitting the form: ' + error.message;
+                            });
+                        });
+                    </script>
+                    
+                </div>
+                
+                <script>
+                    document.getElementById('contactForm').addEventListener('submit', function(event) {
+                        event.preventDefault(); // Prevent the form from submitting in the traditional way
+                
+                        var formData = new FormData(this);
+                
+                        fetch('https://script.google.com/macros/s/AKfycbxZUa7DOXjIVY5qJPjXCzKu7s3YmiLZjHzeJMnzWEUwHzKNhctFRg7HmP02m7quB_S3/exec', {
+                            method: 'POST',
+                            body: formData,
+                        })
+                        .then(response => {
+                            if (!response.ok) { // Check if response is OK
+                                throw new Error('Network response was not ok ' + response.statusText);
+                            }
+                            return response.text();
+                        })
+                        .then(data => {
+                            console.log('Response Data:', data); // Log the response data
+                            document.getElementById('success').innerText = data; // Display success message
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                            document.getElementById('success').innerText = 'There was an error submitting the form: ' + error.message;
+                        });
+                    });
+                </script>
+                
+                
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('.filter-list').forEach(item => {
+                item.addEventListener('click', function() {
+                    // Hide all sub-lists first
+                    document.querySelectorAll('.sub-list').forEach(sub => {
+                        sub.style.display = 'none';
+                    });
+        
+                    // Show the sub-list related to the clicked item
+                    let subListId = this.getAttribute('data-id');
+                    document.getElementById(subListId).style.display = 'block';
+                });
+            });
+        </script>
+        
+        <style>
+            /* Ensure links are styled for visibility */
+            .sub-list a {
+    display: flex;
+    flex-direction: row; /* This makes the anchor tags appear in a row */
+    color: #000; /* Text color */
+    margin-right: 20px; /* Space between items */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Font size, adjust as needed */
+    justify-content: center;
+}
+
+.sub-list {
+   margin-top: 20px;  /* Space above the sub-list */
+}
+
+
+        
+            /* Style the filter list items */
+            #portfolio-flters li {
+                cursor: pointer;
+                padding: 5px 10px;
+                list-style: none;
+                display: inline-block;
+                margin-right: 15px;
+                font-size: 20px;
+            }
+        
+            /* Style the active list item */
+            .filter-active {
+                font-weight: bold;
+                color: #007bff;
+            }
+           
+        </style>
+        
+        <!-- Portfolio End -->
+
+    <!-- Footer Start -->
+    <div class="footer wow fadeIn" data-wow-delay="0.3s"
+    style="background-color: #fff;color:#364967;font-size: 15px;">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12 col-lg-3 text-center">
+                <h5 class="toggle-section">EMAIL <span class="toggle-buttons">+</span></h5>
+                <div class="extra-contents hiddenss">
+                    <a>info@kvpl.org </a>
+                    <!-- <a href="#email2">Email 2</a>
+                    <a href="#email3">Email 3</a>
+                    <a href="#email4">Email 4</a>
+                    <a href="#email5">Email 5</a> -->
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-3 text-center">
+                <h5 class="toggle-section">OFFICES <span class="toggle-buttons">+</span></h5>
+                <div class="extra-contents hiddenss">
+                    <a>Hyderabad- Flat No Bo-10, Indu Fortune Fields, Annexe, Kphb colony, Kukatpally,
+                        Hyderabad, Telangana-500085
+                        </a>
+                    <!-- <a href="#office2">Office 2</a>
+                    <a href="#office3">Office 3</a>
+                    <a href="#office4">Office 4</a>
+                    <a href="#office5">Office 5</a> -->
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-3 text-center">
+                <h5 class="toggle-section">SOCIAL <span class="toggle-buttons">+</span></h5>
+                <div class="extra-contents hiddenss">
+                    <a href="#social1">Social 1</a>
+                    <a href="#social2">Social 2</a>
+                    <a href="#social3">Social 3</a>
+                    <a href="#social4">Social 4</a>
+                    <a href="#social5">Social 5</a>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-3 text-center">
+                <h5 class="toggle-section">CONTACT <span class="toggle-buttons">+</span></h5>
+                <div class="extra-contents hiddenss">
+                    <a>+91 4071385954</a>
+                    <!-- <a href="#legal2">Legal 2</a>
+                    <a href="#legal3">Legal 3</a>
+                    <a href="#legal4">Legal 4</a>
+                    <a href="#legal5">Legal 5</a> -->
+                </div>
+            </div>
+        </div>
+        <script>document.addEventListener('DOMContentLoaded', () => {
+                // Add event listeners for toggle buttons
+                document.querySelectorAll('.toggle-buttons').forEach(button => {
+                    button.addEventListener('click', function () {
+                        const extraContents = this.parentElement.nextElementSibling;
+                        if (extraContents.classList.contains('hiddenss')) {
+                            extraContents.classList.remove('hiddenss');
+                            this.textContent = '−'; // Change the symbol to minus
+                        } else {
+                            extraContents.classList.add('hiddenss');
+                            this.textContent = '+'; // Change the symbol back to plus
+                        }
+                    });
+                });
+            });
+        </script>
+    </div>
+</div>
+
+    <div class="container copyright mt-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 style=" font-family: Gothic A1, sans-serif;font-size: 25px;">CREATIVITY MEETS RESPONSIBILITY</h2>
+                <p style="font-size: 15px;">&copy; <a href="">KOTHARU VENTURES</a>, All Right Reserved.</p>
+                <p>Designed By <a href="">AY</a></p>
+            </div>
+
+
+            
+               
+            
+        </div>
+    </div>
+
+<!-- Footer End -->
+
+        <a href="#content" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

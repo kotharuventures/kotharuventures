@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: white; /* Replace 'background.jpg' with your actual background image path */
+    background-size: contain;
+    background-position: center;
+    color: #ffffff; /* Set text color to white */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent #364967 background */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+    color: #364967;
+    font-style: bold;
+}
+.btn {
+    display: block; /* Change display to block to center the button */
+    width: 200px; /* Set the width of the button */
+    padding: 15px; /* Set padding for the button */
+    margin: 20px auto; /* Center the button horizontally */
+    text-align: center; /* Center the text horizontally */
+    background-color: darkcyan;
+    color: yellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from the link */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.images img {
+    width: 200px;
+    height: auto;
+}

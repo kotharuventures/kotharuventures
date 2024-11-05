@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>KOTHARU VENTURES </title>
+    <link href="img/myPics/SECONDARY LOGO - KOTHARU-08.png" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/942547a0cd.js" crossorigin="anonymous"></script>
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Default for small devices (0px to 991px) */
+        .offcanvas {
+            width: 150px;
+            /* Default initial width */
+        }
+
+        .nav-link {
+            font-size: 12px;
+            /* Default font size for nav links */
+        }
+
+        .offcanvas-title {
+            font-size: 16px;
+            /* Default font size for the offcanvas title */
+        }
+
+        /* For devices between 0px and 991px (mobile & tablet sizes) */
+        @media (max-width: 991px) {
+            .offcanvas {
+                width: 500px !important;
+                /* Set the width to 600px for small devices */
+            }
+
+            .nav-link {
+                font-size: 3rem !important;
+                /* Set font size for nav links up to 991px */
+            }
+
+            .offcanvas-title {
+                font-size: 3.5rem !important;
+                /* Set larger font size for the offcanvas title */
+            }
+        }
+
+        /* For devices larger than 991px */
+        @media (min-width: 992px) {
+            .offcanvas {
+                width: 300px;
+                /* Set the width for larger devices */
+            }
+
+            .nav-link {
+                font-size: 16px;
+                /* Set font size for nav links for larger devices */
+            }
+
+            .offcanvas-title {
+                font-size: 20px;
+                /* Set larger font size for the offcanvas title on bigger screens */
+            }
+        }
+
+
+
+
+        @media screen and (min-width:992px) {
+            .about {
+                padding: 5%;
+            }
+
+            .logs {
+                width: 15%;
+            }
+
+        }
+
+        @media screen and (max-width:991px) {
+
+            .about {
+                padding: 2%;
+                margin-left: 1%;
+            }
+
+            .about-text p {
+                font-size: 2.5rem !important;
+            }
+
+            h2 {
+                font-size: 5rem !important;
+            }
+
+            .logs {
+                width: 30%;
+            }
+
+        }
+
+        .nav-link {
+            color: grey;
+            font-size: 18px;
+            text-align: left;
+            padding: 0%;
+        }
+
+
+        /* Default Style */
+        .fa-bars {
+            font-size: 39px;
+            transition: transform 0.3s ease;
+        }
+
+        /* Rotate on hover */
+        /* .fa-bars:active {
+    transform: rotate(90deg);
+    border: none;
+} */
+
+        /* Rotate on active (click) */
+        /* .fa-bars:hover {
+    transform: rotate(180deg);
+    border: none; 
+} */
+
+        /* Media query for screens smaller than 992px */
+        @media (max-width: 991px) {
+            .fa-bars {
+                font-size: 100px !important;
+                /* Set the font size to 100px */
+            }
+        }
+
+        .navbar-brand img {
+            width: 15%;
+            /* Default width for large screens */
+            float: right;
+            margin-top: 0;
+            /* Ensure no top margin by default */
+        }
+
+        /* Media Query for screens smaller than 992px */
+        @media (max-width: 991px) {
+
+            .navbar-brand img {
+                width: 40% !important;
+                /* Increase width to 30% for smaller screens */
+                /* Move the image 2% down from the top */
+            }
+        }
+
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+            height: 0% !important;
+        }
+
+        .carousel-slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            min-width: 600px;
+            /* Width of each slide */
+            margin-right: -20px;
+            /* Space between slides */
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .carousel-slide img {
+            width: 80%;
+            display: block;
+            aspect-ratio: 3/2;
+        }
+
+        .card-content {
+            position: relative;
+            padding: 10px;
+            color: #364967;
+            background: #fff;
+        }
+
+        .card-content .toggle-button {
+            font-weight: bold;
+            border: 1px solid white;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .extra-content {
+            margin-top: 10px;
+            padding-bottom: 100px;
+            background-color: #fff;
+            color: #364967;
+            border: 1px solid white;
+            border-radius: 5px;
+            margin-bottom: 3%;
+            font-size: 10px;
+            margin-bottom: 20%;
+            width: 80%;
+
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .carousel-container {
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+            position: relative;
+            /* Position relative to enable absolute positioning of controls */
+        }
+
+        .carousel-inner {
+            position: relative;
+            /* Enable absolute positioning for controls inside the image */
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            /* Ensure the image is responsive */
+        }
+
+        /* Styling for prev and next buttons */
+        .carousel-prev,
+        .carousel-next {
+            position: absolute;
+            top: 50%;
+            /* Vertically center the buttons */
+            background: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent background */
+            color: #fff;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            z-index: 2;
+            /* Make sure the buttons are above the image */
+            font-size: 18px;
+            transition: background 0.3s ease;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            transform: translateY(-50%);
+            /* Ensure vertical centering */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Hover effect for buttons */
+        .carousel-prev:hover,
+        .carousel-next:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Left-aligned prev button */
+        .carousel-prev {
+            left: 10px;
+            /* Space from the left */
+        }
+
+        /* Right-aligned next button */
+        .carousel-next {
+            right: 10px;
+            /* Space from the right */
+        }
+
+        /* Media query for screens below 992px */
+        @media (max-width: 992px) {
+
+            .carousel-prev,
+            .carousel-next {
+                font-size: 16px;
+                padding: 12px;
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        /* Media query for screens below 768px */
+        @media (max-width: 768px) {
+
+            .carousel-prev,
+            .carousel-next {
+                font-size: 14px;
+                padding: 10px;
+                width: 30px;
+                height: 30px;
+                top: 10%;
+                /* Vertically center the controls */
+                left: 5px;
+                /* Adjust the left control position */
+                right: 5px;
+                /* Adjust the right control position */
+            }
+        }
+
+        /* Media query for screens below 576px (small devices) */
+        /* Media query for screens below 576px */
+        @media (max-width: 576px) {
+
+            .carousel-prev,
+            .carousel-next {
+                font-size: 12px;
+                /* Further reduction in font size */
+                margin: 0px !important;
+                padding: 8px;
+                width: 28px;
+                height: 28px;
+                left: 5px;
+                /* Adjust for smaller screens */
+                right: 5px;
+                z-index: -5;
+                /* Move controls towards the top */
+                /* Reset margin-top if used previously */
+            }
+        }
+
+
+
+
+
+        .carousel-pagination {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 5px;
+
+        }
+
+        .carousel-pagination .dot {
+            width: 10px;
+            height: 10px;
+            background: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            opacity: 0.5;
+        }
+
+        .carousel-pagination .dot.active {
+            opacity: 1;
+        }
+
+        @media (max-width: 600px) {
+
+            .carousel-prev,
+            .carousel-next {
+                padding: 8px;
+            }
+        }
+
+        .hiddenss {
+            display: none;
+        }
+
+        .extra-contents a {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Loader Section -->
+    <div id="loader">
+        <!-- Placeholder for video, dynamically inserted by JavaScript -->
+    </div>
+    <style>
+       .bgg {
+    background-image: url('./img/myPics/Hero Image.png');
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    z-index: 1;
+}
+
+.text-overlay span {
+    margin: 0 15px; /* Adjust the spacing as needed */
+}
+
+@media screen and (max-width: 992px) {
+    .bgg {
+        height: 20vh;
+        background-size: contain;
+    }
+    
+    .text-overlay {
+        font-size: 20px;
+    }
+
+    .text-overlay span {
+        margin: 0 10px; 
+    }
+}
+
+    </style>
+
+    <style>
+        /* Loader Styling */
+        #loader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            position: relative;
+            overflow: hidden;
+            width: 100vw;
+        }
+
+        video {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            /* Ensures video scales nicely */
+        }
+    </style>
+
+    <script>
+        function loadVideo() {
+            const loader = document.getElementById('loader');
+            const screenWidth = window.innerWidth;
+            let videoElement;
+
+            // Check screen width and insert the appropriate video element based on size
+            if (screenWidth < 576) {
+                // Extra-small devices (phones)
+                videoElement = `
+                <video id="preloader-video" autoplay muted loop>
+                    <source src="./img/myPics/LOGO ANIMATION _ MOBILE.mp4" type="video/mp4">
+                </video>
+            `;
+            } else if (screenWidth >= 576 && screenWidth < 768) {
+                // Small devices (smaller tablets)
+                videoElement = `
+                <video id="preloader-video" autoplay muted loop>
+                    <source src="./img/myPics/LOGO ANIMATION _ MOBILE.mp4" type="video/mp4">
+                </video>
+            `;
+            } else if (screenWidth >= 768 && screenWidth < 992) {
+                // Medium devices (tablets)
+                videoElement = `
+                <video id="preloader-video" autoplay muted loop>
+                    <source src="./img/myPics/LOGO ANIMATION _ MOBILE.mp4" type="video/mp4">
+                </video>
+            `;
+            } else {
+                // Large devices (desktops and larger)
+                videoElement = `
+                <video id="preloader-video" autoplay muted loop>
+                    <source src="./img/myPics/LOGO ANIMATION _ WEBSITE.mp4" type="video/mp4">
+                </video>
+            `;
+            }
+
+            // Insert the video element into the loader div
+            loader.innerHTML = videoElement;
+        }
+
+        // Initial load
+        window.onload = function () {
+            loadVideo();
+
+            // Hide loader after video plays for 3 seconds
+            setTimeout(function () {
+                document.getElementById('loader').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            }, 3000); // Adjust the time as needed
+        };
+
+        // Reload video on window resize
+        window.onresize = function () {
+            loadVideo();
+        };
+    </script>
+
+
+
+
+
+
+    <!-- preloader end -->
+    <div class="wrapper content" id="content" style="display:none ;">
+
+
+        <!-- Nav Bar Start -->
+
+        <div class="container-fluid" style="background-color: #fff;">
+            <nav class="navbar">
+                <div class="container-fluid" style="background-color: #fff;">
+                    <!-- Hamburger Menu Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+
+                        <i class="fa-solid fa-bars"></i>
+
+
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/myPics/PRIMARY LOGO- KOTHARU X MC-03.png"
+                            style="float: right;" /></a>
+                </div>
+            </nav>
+
+            <!-- Offcanvas Sidebar -->
+            <div class="offcanvas offcanvas-start text-#364967" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel" style="background-color: #fff; width: 150px;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color:#fff">KOTHARU</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">TEAM</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="service.html">CAREERS</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="news.html">NEWS</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Nav Bar End -->
+
+        <section class="bgg">
+            <div class="text-overlay">
+                <span>VALUES</span>
+                <span>|</span>
+                <span>VERSATILITY</span>
+                <span>|</span>
+                <span>SUSTAINABILITY</span>
+            </div>
+        </section>
+        
+        
+
+        </section>
+        <!-- Page Header Start -->
+        <div class="page-header" style="margin-top: -1%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>ABOUT US</h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+
+        <!-- About Start -->
+        <div class="about wow fadeInUp" data-wow-delay="0.1s">
+            <!-- <div class="row align-items-center">
+
+                <div class="col-lg-12 col-md-12">
+                    <img src="https://ik.imagekit.io/dlnx2cwu4w//wp-content/uploads/2022/11/wallpapergallery.jpg"
+                        width="100%" />
+                </div>
+            </div> -->
+
+            <div class="row align-items-center mt-5">
+
+                <div class="col-12 col-lg-12 col-md-12">
+
+                    <div class="about-text">
+                        <p style="font-size: 16px;" align="justify">
+                            We are a team driven by the belief that it's time to take our construction principles to the
+                            next level. At the core of our philosophy is a deep commitment to environmental
+                            responsibility, ensuring that our work not only inspires but also sustains. At KVPL we offer
+                            cutting-edge design strategies and innovative construction techniques for new age homes.
+
+                        </p>
+
+
+                    </div>
+                </div>
+
+            </div>
+          <!-- Mission Start-->
+<div class="row mt-5 mb-5">
+    <div class="feature wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 col-md-12">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="flaticon-worker"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Mission</h3>
+                            <p>"Our mission is to provide high-quality construction services at reasonable prices, while upholding a strong commitment to environmental responsibility. We strive to deliver projects that combine exceptional craftsmanship with sustainability, ensuring lasting value for our clients and the planet."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-12">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="flaticon-building"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Vision</h3>
+                            <p>"Our vision is to create innovative, new-age design solutions that seamlessly integrate sustainability at every stage of the process. We strive to fuse futuristic designs with traditional values, crafting spaces that are both sophisticated and luxurious. With a focus on climate-conscious architecture, we aim to infuse art and culture into our designs, creating timeless and inspiring environments."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mission End-->
+
+
+            <!-- Landscape -->
+            <!-- <div class="row" style="margin-top: 3%;">
+                <h3 align="left" class="headings">INTERIOR DESIGN</h3>
+
+                <div class="col-12 col-md-12 col-lg-6 ">
+
+                    <div class="about-text">
+                        <p align="justify">
+                            As public space and biodiversity are subtracted in urban spaces, BIG Landscape works with
+                            architects and other disciplines to integrate the built and natural worlds, connecting
+                            people to people, and people to nature. With every project, we go beyond the brief to give
+                            the gift of public space to the communities in which we work, creating equitable and
+                            accessible public spaces for all.
+                        </p>
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 ">
+
+                    <div class="about-text">
+                        <p align="justify">
+
+                            Our work not only responds to challenges today, it mitigates challenges of the future: we
+                            approach every project as an opportunity to use nature-based solutions for social and
+                            technological integration, community building, ecology preservation, biophilia and
+                            biodiversity enhancement to design sustainable, smarter and safer cities.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-0">
+
+                <div class="carousel">
+                    <button class="carousel-prev">❮</button>
+                    <div class="carousel-slides">
+                        <div class="carousel-slide">
+                            <img src="https://images.pexels.com/photos/2138126/pexels-photo-2138126.jpeg" alt="Card 1">
+                            <div class="card-content">
+                                Card 1 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content1">
+                                    <p align="justify">Our knowledge of building codes, design methods, and construction
+                                        techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 1.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://plus.unsplash.com/premium_photo-1682724602925-f0264b85953f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVpbGRpbmclMjBjb25zdHJ1Y3Rpb258ZW58MHx8MHx8fDA%3D"
+                                alt="Card 2">
+                            <div class="card-content">
+                                Card 2 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content2">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 2.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://cdn.pixabay.com/photo/2019/02/06/16/32/architect-3979490_1280.jpg"
+                                alt="Card 3">
+                            <div class="card-content">
+                                Card 3 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content3">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 3.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://png.pngtree.com/thumb_back/fh260/background/20230618/pngtree-residential-building-under-construction-3d-rendering-with-excavator-and-crane-image_3630005.jpg"
+                                alt="Card 4">
+                            <div class="card-content">
+                                Card 4 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content4">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://st2.depositphotos.com/1001335/9340/i/450/depositphotos_93401314-stock-photo-concept-of-construction-and-design.jpg"
+                                alt="Card 5">
+                            <div class="card-content">
+                                Card 5 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content5">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 5.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://t3.ftcdn.net/jpg/03/31/59/82/360_F_331598222_tadTdFeI0WxEmyGFoWuMTlEK1jNu2Xhl.jpg"
+                                alt="Card 6">
+                            <div class="card-content">
+                                Card 6 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content6">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 6.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-next">❯</button>
+                    <div class="carousel-pagination"></div>
+                </div>
+
+            </div> -->
+
+            <!-- ENGINEERING -->
+
+            <!-- <div class="row" style="margin-top: 3%;">
+                <h3 align="left" class="headings">ENGINEERING</h3>
+
+                <div class="col-12 col-md-12 col-lg-6 ">
+
+                    <div class="about-text">
+                        <p align="justify">
+                            As public space and biodiversity are subtracted in urban spaces, BIG Landscape works with
+                            architects and other disciplines to integrate the built and natural worlds, connecting
+                            people to people, and people to nature. With every project, we go beyond the brief to give
+                            the gift of public space to the communities in which we work, creating equitable and
+                            accessible public spaces for all.
+                        </p>
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 ">
+
+                    <div class="about-text">
+                        <p align="justify">
+
+                            Our work not only responds to challenges today, it mitigates challenges of the future: we
+                            approach every project as an opportunity to use nature-based solutions for social and
+                            technological integration, community building, ecology preservation, biophilia and
+                            biodiversity enhancement to design sustainable, smarter and safer cities.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-0">
+
+                <div class="carousel">
+                    <button class="carousel-prev">❮</button>
+                    <div class="carousel-slides">
+                        <div class="carousel-slide">
+                            <img src="https://images.pexels.com/photos/2138126/pexels-photo-2138126.jpeg" alt="Card 1">
+                            <div class="card-content">
+                                Card 1 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content1">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 1.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://plus.unsplash.com/premium_photo-1682724602925-f0264b85953f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVpbGRpbmclMjBjb25zdHJ1Y3Rpb258ZW58MHx8MHx8fDA%3D"
+                                alt="Card 2">
+                            <div class="card-content">
+                                Card 2 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content2">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 2.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://cdn.pixabay.com/photo/2019/02/06/16/32/architect-3979490_1280.jpg"
+                                alt="Card 3">
+                            <div class="card-content">
+                                Card 3 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content3">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 3.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://png.pngtree.com/thumb_back/fh260/background/20230618/pngtree-residential-building-under-construction-3d-rendering-with-excavator-and-crane-image_3630005.jpg"
+                                alt="Card 4">
+                            <div class="card-content">
+                                Card 4 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content4">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://st2.depositphotos.com/1001335/9340/i/450/depositphotos_93401314-stock-photo-concept-of-construction-and-design.jpg"
+                                alt="Card 5">
+                            <div class="card-content">
+                                Card 5 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content5">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 5.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://t3.ftcdn.net/jpg/03/31/59/82/360_F_331598222_tadTdFeI0WxEmyGFoWuMTlEK1jNu2Xhl.jpg"
+                                alt="Card 6">
+                            <div class="card-content">
+                                Card 6 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content6">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 6.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-next">❯</button>
+                    <div class="carousel-pagination"></div>
+                </div>
+            </div> -->
+            <!-- ARCHITECTURE -->
+
+            <!-- <div class="row" style="margin-top: 3%;">
+                <h3 align="left">ARCHITECTURE</h3>
+
+                <div class="col-12 col-md-12 col-lg-6 ">
+
+                    <div class="about-text">
+                        <p align="left">
+                            As public space and biodiversity are subtracted in urban spaces, BIG Landscape works with
+                            architects and other disciplines to integrate the built and natural worlds, connecting
+                            people to people, and people to nature. With every project, we go beyond the brief to give
+                            the gift of public space to the communities in which we work, creating equitable and
+                            accessible public spaces for all.
+                        </p>
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 ">
+
+                    <div class="about-text">
+                        <p align="left">
+
+                            Our work not only responds to challenges today, it mitigates challenges of the future: we
+                            approach every project as an opportunity to use nature-based solutions for social and
+                            technological integration, community building, ecology preservation, biophilia and
+                            biodiversity enhancement to design sustainable, smarter and safer cities.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-0">
+
+                <div class="carousel">
+                    <button class="carousel-prev">❮</button>
+                    <div class="carousel-slides">
+                        <div class="carousel-slide">
+                            <img src="https://images.pexels.com/photos/2138126/pexels-photo-2138126.jpeg" alt="Card 1">
+                            <div class="card-content">
+                                Card 1 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content1">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 1.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://plus.unsplash.com/premium_photo-1682724602925-f0264b85953f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVpbGRpbmclMjBjb25zdHJ1Y3Rpb258ZW58MHx8MHx8fDA%3D"
+                                alt="Card 2">
+                            <div class="card-content">
+                                Card 2 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content2">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 2.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://cdn.pixabay.com/photo/2019/02/06/16/32/architect-3979490_1280.jpg"
+                                alt="Card 3">
+                            <div class="card-content">
+                                Card 3 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content3">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 3.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://png.pngtree.com/thumb_back/fh260/background/20230618/pngtree-residential-building-under-construction-3d-rendering-with-excavator-and-crane-image_3630005.jpg"
+                                alt="Card 4">
+                            <div class="card-content">
+                                Card 4 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content4">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://st2.depositphotos.com/1001335/9340/i/450/depositphotos_93401314-stock-photo-concept-of-construction-and-design.jpg"
+                                alt="Card 5">
+                            <div class="card-content">
+                                Card 5 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content5">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 5.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://t3.ftcdn.net/jpg/03/31/59/82/360_F_331598222_tadTdFeI0WxEmyGFoWuMTlEK1jNu2Xhl.jpg"
+                                alt="Card 6">
+                            <div class="card-content">
+                                Card 6 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content6">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 6.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-next">❯</button>
+                    <div class="carousel-pagination"></div>
+                </div>
+            </div> -->
+
+            <!-- PRODUCTS -->
+
+            <!-- <div class="row" style="margin-top: 3%;">
+                <h3 align="left">PRODUCTS</h3>
+
+                <div class="col-12 col-md-12 col-lg-6 ">
+
+                    <div class="about-text">
+                        <p align="left">
+                            As public space and biodiversity are subtracted in urban spaces, BIG Landscape works with
+                            architects and other disciplines to integrate the built and natural worlds, connecting
+                            people to people, and people to nature. With every project, we go beyond the brief to give
+                            the gift of public space to the communities in which we work, creating equitable and
+                            accessible public spaces for all.
+                        </p>
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 ">
+
+                    <div class="about-text">
+                        <p align="left">
+
+                            Our work not only responds to challenges today, it mitigates challenges of the future: we
+                            approach every project as an opportunity to use nature-based solutions for social and
+                            technological integration, community building, ecology preservation, biophilia and
+                            biodiversity enhancement to design sustainable, smarter and safer cities.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-0">
+
+                <div class="carousel">
+                    <button class="carousel-prev">❮</button>
+                    <div class="carousel-slides">
+                        <div class="carousel-slide">
+                            <img src="https://images.pexels.com/photos/2138126/pexels-photo-2138126.jpeg" alt="Card 1">
+                            <div class="card-content">
+                                Card 1 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content1">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 1.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://plus.unsplash.com/premium_photo-1682724602925-f0264b85953f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVpbGRpbmclMjBjb25zdHJ1Y3Rpb258ZW58MHx8MHx8fDA%3D"
+                                alt="Card 2">
+                            <div class="card-content">
+                                Card 2 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content2">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 2.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://cdn.pixabay.com/photo/2019/02/06/16/32/architect-3979490_1280.jpg"
+                                alt="Card 3">
+                            <div class="card-content">
+                                Card 3 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content3">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 3.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://png.pngtree.com/thumb_back/fh260/background/20230618/pngtree-residential-building-under-construction-3d-rendering-with-excavator-and-crane-image_3630005.jpg"
+                                alt="Card 4">
+                            <div class="card-content">
+                                Card 4 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content4">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://st2.depositphotos.com/1001335/9340/i/450/depositphotos_93401314-stock-photo-concept-of-construction-and-design.jpg"
+                                alt="Card 5">
+                            <div class="card-content">
+                                Card 5 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content5">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 5.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://t3.ftcdn.net/jpg/03/31/59/82/360_F_331598222_tadTdFeI0WxEmyGFoWuMTlEK1jNu2Xhl.jpg"
+                                alt="Card 6">
+                            <div class="card-content">
+                                Card 6 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content6">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 6.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-next">❯</button>
+                    <div class="carousel-pagination"></div>
+                </div>
+            </div> -->
+            <!-- PLANNING -->
+
+            <!-- <div class="row" style="margin-top: 3%;">
+                <h3 align="left">PLANNING</h3>
+
+                <div class="col-12 col-md-12 col-lg-6 ">
+
+                    <div class="about-text">
+                        <p align="left">
+                            As public space and biodiversity are subtracted in urban spaces, BIG Landscape works with
+                            architects and other disciplines to integrate the built and natural worlds, connecting
+                            people to people, and people to nature. With every project, we go beyond the brief to give
+                            the gift of public space to the communities in which we work, creating equitable and
+                            accessible public spaces for all.
+                        </p>
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 ">
+
+                    <div class="about-text">
+                        <p align="left">
+
+                            Our work not only responds to challenges today, it mitigates challenges of the future: we
+                            approach every project as an opportunity to use nature-based solutions for social and
+                            technological integration, community building, ecology preservation, biophilia and
+                            biodiversity enhancement to design sustainable, smarter and safer cities.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-0">
+
+                <div class="carousel">
+                    <button class="carousel-prev">❮</button>
+                    <div class="carousel-slides">
+                        <div class="carousel-slide">
+                            <img src="https://images.pexels.com/photos/2138126/pexels-photo-2138126.jpeg" alt="Card 1">
+                            <div class="card-content">
+                                Card 1 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content1">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 1.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://plus.unsplash.com/premium_photo-1682724602925-f0264b85953f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVpbGRpbmclMjBjb25zdHJ1Y3Rpb258ZW58MHx8MHx8fDA%3D"
+                                alt="Card 2">
+                            <div class="card-content">
+                                Card 2 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content2">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 2.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://cdn.pixabay.com/photo/2019/02/06/16/32/architect-3979490_1280.jpg"
+                                alt="Card 3">
+                            <div class="card-content">
+                                Card 3 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content3">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 3.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://png.pngtree.com/thumb_back/fh260/background/20230618/pngtree-residential-building-under-construction-3d-rendering-with-excavator-and-crane-image_3630005.jpg"
+                                alt="Card 4">
+                            <div class="card-content">
+                                Card 4 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content4">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://st2.depositphotos.com/1001335/9340/i/450/depositphotos_93401314-stock-photo-concept-of-construction-and-design.jpg"
+                                alt="Card 5">
+                            <div class="card-content">
+                                Card 5 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content5">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 5.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://t3.ftcdn.net/jpg/03/31/59/82/360_F_331598222_tadTdFeI0WxEmyGFoWuMTlEK1jNu2Xhl.jpg"
+                                alt="Card 6">
+                            <div class="card-content">
+                                Card 6 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content6">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 6.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-next">❯</button>
+                    <div class="carousel-pagination"></div>
+                </div>
+            </div> -->
+            <!-- SUSTAINABILITY -->
+
+            <!-- <div class="row" style="margin-top: 3%;">
+                <h3 align="left">SUSTAINABILITY</h3>
+
+                <div class="col-12 col-md-12 col-lg-6 ">
+
+                    <div class="about-text">
+                        <p align="left">
+                            As public space and biodiversity are subtracted in urban spaces, BIG Landscape works with
+                            architects and other disciplines to integrate the built and natural worlds, connecting
+                            people to people, and people to nature. With every project, we go beyond the brief to give
+                            the gift of public space to the communities in which we work, creating equitable and
+                            accessible public spaces for all.
+                        </p>
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 ">
+
+                    <div class="about-text">
+                        <p align="left">
+
+                            Our work not only responds to challenges today, it mitigates challenges of the future: we
+                            approach every project as an opportunity to use nature-based solutions for social and
+                            technological integration, community building, ecology preservation, biophilia and
+                            biodiversity enhancement to design sustainable, smarter and safer cities.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-0">
+
+                <div class="carousel">
+                    <button class="carousel-prev">❮</button>
+                    <div class="carousel-slides">
+                        <div class="carousel-slide">
+                            <img src="https://images.pexels.com/photos/2138126/pexels-photo-2138126.jpeg" alt="Card 1">
+                            <div class="card-content">
+                                Card 1 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content1">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 1.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://plus.unsplash.com/premium_photo-1682724602925-f0264b85953f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVpbGRpbmclMjBjb25zdHJ1Y3Rpb258ZW58MHx8MHx8fDA%3D"
+                                alt="Card 2">
+                            <div class="card-content">
+                                Card 2 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content2">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 2.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://cdn.pixabay.com/photo/2019/02/06/16/32/architect-3979490_1280.jpg"
+                                alt="Card 3">
+                            <div class="card-content">
+                                Card 3 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content3">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 3.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://png.pngtree.com/thumb_back/fh260/background/20230618/pngtree-residential-building-under-construction-3d-rendering-with-excavator-and-crane-image_3630005.jpg"
+                                alt="Card 4">
+                            <div class="card-content">
+                                Card 4 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content4">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 4.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://st2.depositphotos.com/1001335/9340/i/450/depositphotos_93401314-stock-photo-concept-of-construction-and-design.jpg"
+                                alt="Card 5">
+                            <div class="card-content">
+                                Card 5 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content5">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 5.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://t3.ftcdn.net/jpg/03/31/59/82/360_F_331598222_tadTdFeI0WxEmyGFoWuMTlEK1jNu2Xhl.jpg"
+                                alt="Card 6">
+                            <div class="card-content">
+                                Card 6 Content
+                                <span class="toggle-button">+</span>
+                                <div class="extra-content hidden" id="content6">
+                                    <p>Our knowledge of building codes, design methods, and construction techniques
+                                        around the world provides a basis for developing creative design solutions which
+                                        push the boundaries of what is possible. Integrating with the architectural and
+                                        landscape teams allows for rapid development of building forms, as the results
+                                        of structural analysis occur at a pace that keeps up with architectural design
+                                        iterations. 6.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-next">❯</button>
+                    <div class="carousel-pagination"></div>
+                </div>
+            </div> -->
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const carousels = document.querySelectorAll('.carousel');
+
+                    carousels.forEach(carousel => {
+                        const slides = carousel.querySelector('.carousel-slides');
+                        const slideElements = carousel.querySelectorAll('.carousel-slide');
+                        const totalSlides = slideElements.length;
+                        const pagination = carousel.querySelector('.carousel-pagination');
+                        let currentIndex = 0;
+
+                        // Create pagination dots
+                        slideElements.forEach((_, index) => {
+                            const dot = document.createElement('div');
+                            dot.classList.add('dot');
+                            if (index === 0) dot.classList.add('active');
+                            dot.addEventListener('click', () => {
+                                currentIndex = index;
+                                updateCarousel();
+                                resetAutoSlide(); // Reset the auto-slide timer when user clicks a dot
+                            });
+                            pagination.appendChild(dot);
+                        });
+
+                        function updateCarousel() {
+                            const offset = -currentIndex * (100 + 200); // Width + margin
+                            slides.style.transform = `translateX(${offset}px)`;
+
+                            // Update pagination
+                            pagination.querySelectorAll('.dot').forEach((dot, index) => {
+                                dot.classList.toggle('active', index === currentIndex);
+                            });
+                        }
+
+                        function showNextSlide() {
+                            currentIndex = (currentIndex + 1) % totalSlides;
+                            updateCarousel();
+                        }
+
+                        function showPrevSlide() {
+                            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                            updateCarousel();
+                        }
+
+                        // Automatic slide change every 3 seconds
+                        let autoSlideInterval = setInterval(showNextSlide, 3000);
+
+                        function resetAutoSlide() {
+                            clearInterval(autoSlideInterval); // Stop current auto-slide interval
+                            autoSlideInterval = setInterval(showNextSlide, 2000); // Restart auto-slide interval
+                        }
+
+                        // Automatic slide change with dragging
+                        let isDragging = false;
+                        let startX;
+                        let scrollLeft;
+
+                        slides.addEventListener('mousedown', (e) => {
+                            isDragging = true;
+                            startX = e.pageX - slides.offsetLeft;
+                            scrollLeft = slides.scrollLeft;
+                            slides.style.transition = 'none'; // Disable transition during drag
+                            clearInterval(autoSlideInterval); // Pause auto-slide when user is dragging
+                        });
+
+                        slides.addEventListener('mouseleave', () => {
+                            if (isDragging) {
+                                isDragging = false;
+                                slides.style.transition = 'transform 0.5s ease-in-out'; // Re-enable transition
+                                resetAutoSlide(); // Restart auto-slide after drag
+                            }
+                        });
+
+                        slides.addEventListener('mouseup', () => {
+                            if (isDragging) {
+                                isDragging = false;
+                                slides.style.transition = 'transform 0.5s ease-in-out'; // Re-enable transition
+                                const slideWidth = slides.clientWidth / (totalSlides + 1); // Width of each slide including margin
+                                const newIndex = Math.round((scrollLeft - startX) / slideWidth);
+                                currentIndex = Math.max(0, Math.min(totalSlides - 1, currentIndex - newIndex));
+                                updateCarousel();
+                                resetAutoSlide(); // Restart auto-slide after user interaction
+                            }
+                        });
+
+                        slides.addEventListener('mousemove', (e) => {
+                            if (!isDragging) return;
+                            e.preventDefault();
+                            const x = e.pageX - slides.offsetLeft;
+                            const walk = (x - startX) * 3; // Scroll speed
+                            slides.scrollLeft = scrollLeft - walk;
+                        });
+
+                        // Add event listeners for control buttons
+                        carousel.querySelector('.carousel-next').addEventListener('click', () => {
+                            showNextSlide();
+                            resetAutoSlide(); // Reset the auto-slide timer when user clicks next
+                        });
+                        carousel.querySelector('.carousel-prev').addEventListener('click', () => {
+                            showPrevSlide();
+                            resetAutoSlide(); // Reset the auto-slide timer when user clicks prev
+                        });
+
+                        // Add event listeners for toggle buttons
+                        carousel.querySelectorAll('.toggle-button').forEach(button => {
+                            button.addEventListener('click', function () {
+                                const extraContent = this.nextElementSibling;
+                                if (extraContent.classList.contains('hidden')) {
+                                    extraContent.classList.remove('hidden');
+                                    this.textContent = '−'; // Change the symbol to minus
+                                } else {
+                                    extraContent.classList.add('hidden');
+                                    this.textContent = '+'; // Change the symbol back to plus
+                                }
+                            });
+                        });
+
+                        updateCarousel(); // Initial call to set correct position
+                    });
+                });
+            </script>
+
+
+            <!-- About End -->
+        </div>
+
+
+
+
+        <!-- Footer Start -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s" style="font-size: 15px;">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 col-lg-3 text-center">
+                        <h5 class="toggle-section">EMAIL <span class="toggle-buttons">+</span></h5>
+                        <div class="extra-contents hiddenss">
+                            <a href="mailto:info@kvpl.org" style="color: white; text-decoration: none;">info@kvpl.org</a>
+                            <!-- <a href="#email2">Email 2</a>
+                            <a href="#email3">Email 3</a>
+                            <a href="#email4">Email 4</a>
+                            <a href="#email5">Email 5</a> -->
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-3 text-center">
+                        <h5 class="toggle-section">OFFICES <span class="toggle-buttons">+</span></h5>
+                        <div class="extra-contents hiddenss">
+                            <a>Hyderabad- Flat No Bo-10, Indu Fortune Fields, Annexe, Kphb colony, Kukatpally,
+                                Hyderabad, Telangana-500085
+                            </a>
+                            <!-- <a href="#office2">Office 2</a>
+                            <a href="#office3">Office 3</a>
+                            <a href="#office4">Office 4</a>
+                            <a href="#office5">Office 5</a> -->
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-3 text-center">
+                        <h5 class="toggle-section">SOCIAL <span class="toggle-buttons">+</span></h5>
+                        <div class="extra-contents hiddenss">
+                            <a href="#social1">Social 1</a>
+                            <a href="#social2">Social 2</a>
+                            <a href="#social3">Social 3</a>
+                            <a href="#social4">Social 4</a>
+                            <a href="#social5">Social 5</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-3 text-center">
+                        <h5 class="toggle-section">CONTACT <span class="toggle-buttons">+</span></h5>
+                        <div class="extra-contents hiddenss">
+                            <a>+91 4071385954</a>
+                            <!-- <a href="#legal2">Legal 2</a>
+                            <a href="#legal3">Legal 3</a>
+                            <a href="#legal4">Legal 4</a>
+                            <a href="#legal5">Legal 5</a> -->
+                        </div>
+                    </div>
+                </div>
+                <script>document.addEventListener('DOMContentLoaded', () => {
+                        // Add event listeners for toggle buttons
+                        document.querySelectorAll('.toggle-buttons').forEach(button => {
+                            button.addEventListener('click', function () {
+                                const extraContents = this.parentElement.nextElementSibling;
+                                if (extraContents.classList.contains('hiddenss')) {
+                                    extraContents.classList.remove('hiddenss');
+                                    this.textContent = '−'; // Change the symbol to minus
+                                } else {
+                                    extraContents.classList.add('hiddenss');
+                                    this.textContent = '+'; // Change the symbol back to plus
+                                }
+                            });
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+
+        <div class="container copyright mt-5">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 style=" font-family: Gothic A1, sans-serif;font-size: 25px;">CREATIVITY MEETS RESPONSIBILITY
+                    </h3>
+                    <p style="font-size: 15px;">&copy; <a href="">KOTHARU VENTURES</a>, All Right Reserved.</p>
+                    <p>Designed By <a href="">AY</a></p>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+        <!-- Footer End -->
+
+        <a href="#content" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
